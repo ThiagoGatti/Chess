@@ -2,7 +2,7 @@
 
 namespace ChessLogic
 {
-    public class Knight
+    public class Knight : Piece
     {
 
         public override PieceType Type => PieceType.Knight;
