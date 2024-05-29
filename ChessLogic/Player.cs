@@ -14,7 +14,7 @@
             {
                 switch (player)
                 {
-                    case Player.White;
+                case Player.White:
                         return Player.Black;
                     case Player.Black:
                         return Player.White;
