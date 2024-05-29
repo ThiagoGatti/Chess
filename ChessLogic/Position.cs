@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChessLogic
+﻿namespace ChessLogic
 {
     public class Position
 
@@ -28,7 +22,7 @@ namespace ChessLogic
         }
 
         public override bool Equals(object obj)
-        {aaa
+        {
             return obj is Position position &&
                    Row == position.Row &&
                    Column == position.Column;
@@ -48,7 +42,10 @@ namespace ChessLogic
         {
             return !(left == right);
         }
+
+        public static Position operator +(Position pos, Direction dir)
+        {
+            return new Position(pos.Row + dir.RowDelta, pos.Column + dir.ColumnDelta);
+        }
     }
-
-
 }
