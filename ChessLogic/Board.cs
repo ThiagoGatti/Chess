@@ -38,15 +38,7 @@ namespace ChessLogic
             this[0,4] = new King(Player.Black);
             this[0,5] = new Bishop(Player.Black);
             this[0,6] = new Knight(Player.Black);
-            this[0,7] = new Rook(Player.Black);
-            this[1,0] = new Pawn(Player.Black);
-            this[1,1] = new Pawn(Player.Black);
-            this[1,2] = new Pawn(Player.Black); 
-            this[1,3] = new Pawn(Player.Black); 
-            this[1,4] = new Pawn(Player.Black);
-            this[1,5] = new Pawn(Player.Black);
-            this[1,6] = new Pawn(Player.Black);
-            this[1,7] = new Pawn(Player.Black);
+
 
             this[7,0] = new Rook(Player.White);
             this[7,1] = new Knight(Player.White);
@@ -55,15 +47,14 @@ namespace ChessLogic
             this[7,4] = new King(Player.White);
             this[7,5] = new Bishop(Player.White);
             this[7,6] = new Knight(Player.White);
-            this[7,7] = new Rook(Player.White);
-            this[6,0] = new Pawn(Player.White);
-            this[6,1] = new Pawn(Player.White); 
-            this[6,2] = new Pawn(Player.White); 
-            this[6,3] = new Pawn(Player.White);
-            this[6,4] = new Pawn(Player.White);
-            this[6,5] = new Pawn(Player.White);
-            this[6,6] = new Pawn(Player.White);
-            this[6,7] = new Pawn(Player.White);
+
+            for (int c = 0; c < 8; c++)
+            {
+                this[1,c] = new Pawn(Player.Black);
+                this[6,c] = new Pawn(Player.White);
+            }
+
+
 
         }
     }
