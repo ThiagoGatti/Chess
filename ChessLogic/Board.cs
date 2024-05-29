@@ -38,6 +38,7 @@ namespace ChessLogic
             this[0,4] = new King(Player.Black);
             this[0,5] = new Bishop(Player.Black);
             this[0,6] = new Knight(Player.Black);
+            this[0,7] = new Rook(Player.Black);
 
 
             this[7,0] = new Rook(Player.White);
@@ -47,6 +48,7 @@ namespace ChessLogic
             this[7,4] = new King(Player.White);
             this[7,5] = new Bishop(Player.White);
             this[7,6] = new Knight(Player.White);
+            this[7,7] = new Rook(Player.White);
 
             for (int c = 0; c < 8; c++)
             {
