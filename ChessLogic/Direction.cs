@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ChessLogic
 {
-    internal class Direction
+    public class Direction
     {
+        aaa
     }
 }
